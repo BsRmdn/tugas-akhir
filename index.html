@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M-One Medical Tech</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar nav-pills navbar-expand-lg shadow-sm bg-white fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="/assets/logo smk.png" alt="" height="40" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item px-1">
+              <a class="nav-link" aria-current="page" href="#"><b>Home</b></a>
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link" href="#about"><b>About</b></a>
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link" href="#products"><b>Products</b></a>
+            </li>
+
+            <li class="nav-item px-1">
+              <a class="nav-link" href="#"><b>News</b></a>
+            </li>
+            <li class="nav-item px-1">
+              <a class="nav-link active rounded-pill text-white" href="#contact"
+                ><b>Contact</b></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Jumbotron 1-->
+    <section id="jumbotron" class="">
+      <div class="float-end pt-5 me-5">
+        <img src="/assets/microwave.png" alt="microwave" />
+      </div>
+      <div class="d-flex bg align-items-center pb-5 pe-5">
+        <div class="flex-grow-1 ms-5 pb-5">
+          <h1 class="h2 text-white">Health is the real wealth</h1>
+          <p class="h5 text-white fw-bold pb-4 pe-5">
+            Create overall health for a BETTER LIFE with a better quality in
+            Indonesia.
+          </p>
+          <button
+            type="button"
+            class="btn btn-outline-light rounded-pill fw-bold"
+          >
+            PT M-One Medical Equipment Nusantara
+          </button>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="jumbotron p-5 col-md-6 bg-primary align-items-center">
+          <h1 class="text-white">Health is the real wealth</h1>
+          <p class="text-white">
+            Create overall health for a BETTER LIFE with a better quality in
+            Indonesia.
+          </p>
+          <button type="button" class="btn btn-outline-light rounded-pill">
+            PT M-One Medical Equipment Nusantara
+          </button>
+        </div>
+
+        <div class="col-md-auto offset-md-1 mb-md-0 p-md-4">
+          <img src="/assets/microwave.png" alt="microwave" />
+        </div>
+      </div> -->
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-5">
+      <div class="container text-center">
+        <p class="fw-bold text-primary">
+          Welcome to M-One Medical Equipment Nusantara
+        </p>
+        <p>We are the leader for medical equipment supplier in Indonesia</p>
+        <div class="row row-cols-1 row-cols-md-4 g-4 p-4">
+          <div class="col">
+            <div class="p-4 border border-0 shadow-sm">
+              <img
+                width="80px"
+                class="pb-4"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAABmJLR0QA/wD/AP+gvaeTAAAOUklEQVR4nO2de3Qc1X3HP787K9uSNStMbYPhEGoMwRyTNAQ4QIgDKeWREpMQHgdCU0ggBmNpZeETEh7lKLQJjzbYkgwBkia0NPSAQxMgKaUlNNCG0BIeDSFJoRAMwQZsbEkr2bK1c7/9Y1e2rMdqd6XVrMx+ztlzRjP33t9v5qs7d+69v7kDVapUqVKlSpUqVapUqTK52GQaa1imWVHCLzfTqWDzJtt+EURgvzfTQ/Xb3B3r77Stk2V40i5I2KTFmL8fmDNZNieI17x3Z/SusRcmw9ikCBIu1/sJ/NNAEvSUea43C14igSbDfrEoIhDR4WBfAw4D1muHO6Lndnun3LYT5TYAQKAbgSTYA+kN7izWWjQpdsfHy1ykh8Nk9FOwY5jurwGay23UldvA7CsVgj4J9PuMXTZFxMhyl/V5BZcCmDgfVPY7StkF2bad+UAN8Ove2+ytctubaHo77H+Ad4E54XL2Lre9sgsSeOqyW9pWblvlwsRWgMz0gXMpH5PThuRjqWqStf5aSaeA1cTig6kP2T+l24NbYrE/iNgFSdb6RonrYu2SZJuG4+ubM2/0tCXWxudIBQgi2UdAYFzl5P4tDh+8/PkYK5EdD7y3BQECAKT/7Wq3Z+JwoD4VHWsAyvkSI2Vv1KsUR1WQCqMqSIVRFaTCqApSYVQFqTCqglQYo/ZDki062CIaxmvAK1oIBmYzG1I6cthxtFd2yxaMdHwy8OYPQOCMuSP76KcB1GSiD0xLae547VnEps5bbd2Ix4buSDb3nyq5NuDQ8RqukpdnzNzy7jb7r8E7dxMk2ZQ5XWYPkO09vwu8NokOvieQMHMsQDQAfc67xV1r7BcDx3fdss5R4M3fZlkxVqX3dlfSapkYfN7zaVFtfeS/ZXCBd1EHcNzAoZ01pKFRR3nnnwbWpTe4BVNqZm8Kst9S1XXP8BsN6nzGzRuYvNv5lCWL9slu2YtVMcrP+jttq4OXABQwb2D/LkF2bVfFmCSUu9Y1tkuHaj+kwqgKUmFUBakwqoJUGFVBKoyqIBVGyUEOyebMnyFbAjZqNJ8gLfSTng3u9inft2nS9BC/AuwjZqMHzHn0tpnuS7clHizFTEmChM3R1RJfy/6VP4Dd4Mxwnv9gGi4txValEDrdjzgdlPeMs9ErdkHYlPl8uiNxV7F2SqshoilnPBXJ/2a0ZAG2j8y+C1xCi1awyqZkOGlDiw7ykT8d2CLTF+XVNVrawLnFEtdh1ggULcjOsaywKbMEswcFWw3GCoo+CPDp9mDMOKYwFb0KzBe8bjBVByunA/tj+lm6LfHRfAnrVmhe4P16suf6+hjl7g9Md7ijBmLShtUQgzqyF3xCMXjfRJdZ4SQo4ToOv2WZPeacfXG0DAKnyL9crCGZOyFw/L7YfJVA5KMjTXZfUZmMd5xzx+VL4iP/AHD44H3DBRG9Xavs1VFLaZULNxflGgBBxBtdbfa74nPGT9ioeThfXCYR5b2OQJiKtg/dV+2HVBgjPGVpSZiKRn+y21zkf0oO7/yrYWqqdkVKOud5ea/jKFRrSIUxQg2xh9Lt7oxRc7TKhZt90f/qzruDutZM2TbkeJz/zyKzbUi3B/vlLTcV/QLYLeyoWkMqjEp4Yaco5lyu+u2J6GMeO9rBQmH7gJIAhnUKrcf4rSL/VE9P4knusr64fS6GqSFIq1y4OVqC3Bf6zH8CrMYYGEXb1W7uHGUSmHOESb9NzdEP5f13ejtqHo3B86IpXpBWRIp+IMFS1XCn9Y+RYzpAPwx75i6E+ubMObbZfxXsMGznxV8HPIbxf3i9hWMThsPbXIm5GAsNTgL2NXG+mTs/TGWe9uiq3vaanxTrg4PtHkA2Y6y0NUZt7pmspPMtoYaYIHoT+MOZtRzWC78cLWW4UrPp9/sC27e+zdvFWKlr1H7O9B2TTs3tegujzeTu7263AkYKZDMbOdyZPw/jcrCjHfZofSq6J+Hc8s7V1lmoL/0J3gyyV/kQWjWNVtsxWlrvo8OzQ4QaaxxrREpr1I1Hspn95fmSqd9fCjjMHi1mPqQ+1f/xIPDPZZdx4k2Jy9Ldbn66LbixMDEATL1r7IV0R3BNjdyBwJeBLQafjbx/dmaT/qhQf7autg1k//GSyS3RuXkTy12SNW+PFFr+YEoSxOS+AfQjloapzOdHSpNszHzC4DoAvN1UaNn1zZmzDPcwYi7wD4k+t6inI7hjPI3z5g7rTrcHN0fOLZLsEWC+c/7x+iadUGgZJt0IINnqmc364Ehpks1RC2gJ0EnG3VGKr8OG38fsh+wy3ijRkSvmBzj/91EUrEso2leBnYv4HNk44ZvT7cGXC3Emmcr8qbAfAgmML6Xbgm+UclJ5OUdBOM/fDFwB9Ji5P+5us6fHziirT/m7DS4Atsm4w0yPm4INUrQQ3Hmg0wAPOjvdnvjBWCUO9EPyDr8XSndbsCZszmxDthp0Jt7ODMwjs4EHnx3AX6Tb3Y2FlFef0uEev9agRrCspy24vVTf8rLWojSsDJuiPoyrhf9RXaOO2LrG1ufPaOrZWxeFm/07QMrECmQrhCfXZgBswnRxqdO3MM6OYbot8bfe3MEYV0n2iMSzmD1m8JfOu4Xp9uAGBj0ajUqLag1/n0Edxk097WUSY7DvHe5aGf+ImBtY9D1aNfa1aLVMuj24QrgPYfw16HGJZ8F+ZLAi0ecOHo8YMAH9kN42exu4MfcriaT3VwsOA/13en1wzVjp65s0x5lfo+yww9CXjiLgiRkZt2LjbdYzeimm2n4t7Uv4YzE7MdwSXZyGbxXib0+7/Qq4spC0xRL70EntFTpA4ktA5H1wSSFPY4b/G8G5wAKys3KDf4cAF/cF/qqxytl4m/WY13IAZF+fc7nqx3EqE0LsggQZv5Js5/GegheadBwBYOh0F7gFg3+gLwAIK+h9xe41iYdBjwOz+2p87JEx8Q6dtKjWvL8IQSS3quB8HoeBD4J1PUNm5Rqa+xd4GVgR/2zGLYgTEMtBtxTU7pWJWGtIMhN9Oveu3TNbO+y5uPxIrw9+DGwA5ocp8s6Dl5tYBRF2GoDEuJ5Mxk223fpnAMOfFqcr8d6yjI8BmNyIA37hSs1Wv+4x9HGK9NXQyUOmUHeAPZgO7M9HCtgTetSwi4VOLMbORBNbDck90RwIaHrdKAOU/f4qQyczshivzKgZHoi2I0j8FkYcyJwGOjuM/LKRTJkPns9tLSroBMpEbDVkaw0HOWEm3th0s6VHTmULQSCdke5IPDT06EiZtt1ibwD7Dt1f3xRdasbtZFeqHkb6bV4O55EB9m5Yplld37QtxZzPRBFbDXE+u2yHTGOu5Ws2/hdRzZS/jGw7shGAgL3Ga69UYhPEW2YagOFGDVyOgU6AKMGYE1HlIr6nLJd4F0Dma2PzYQiCmQAW5GpKDMQmiDJkvzQgG/fqOhNCq5xlP6XRnw4pIVh2YoivUV/DhrCZLsT8PNOiWwGEnRc2RR8YfEDolZ6OxPeHZ5GFTdGFYPvsvt+OAyFjxI+z7LWRA6KAWsSLtFpp4ZkTQIz9EBPK/BJscdjJkWn4+dAUwq817Gzgc0PHdA2joVHDgu/CZo5H9t3h9gTgzbsRRIRMEB1jGHKjxwhMBrF2DA17QrBYkT+ZEQTpaU/cNzPV/26A+7hskK/iYmB2VDP8XT9HptZn78SvYdy705bYgbkfd7fvvj7VIF9OyZX9xHjPazzEKojM/Qvy15jxWeD6kdLkwnZ268mHTdEnMWbnLRt7uafNfaUgR5o0HfxnABKRe7igPGUi1rGs9CyeJLtI2qEzU/0nxeVHaNF5wCxMPxtt6b3JIt75kFbzgm8DONm1sfiwVDVgVwOgwmYMy0nsoaQJ526NvF+J2Yn1zZlzCvtchLrBMK/rw1S0afCRyNuBZsKgoA5nOMM3A+8HXk33BfeUcg4TSewzhp2rrRNxA4DJOupWaN5YeTDuAIT0GWDp4F8uuC5jFn17rGLqW7RI8FUAma4uICy27MReQwDSf+BWhVuic5EdFfjoXi7SKfkC49Ltib9rSOlX3qIPZ+OOBmGK5IOfp9uDX+ez2bBMs3zkvw/UgT3U0xbcmy/9ZFERgtBqGZbrAgL/FNjiMKl70q06L18MbS6wrKTvjcy+UuH2vujB7Ggy67TDLinV9Ykm9lvWAOlb7SWPPwfoA51Zv1kPzVqqcS/kPJS6Ru23vc//O9hHgS3e3BmT8cHIQqkYQSDb53DynwJ6DZ2SmeGfSTbrmIkqP5nqPy0I/HNk47k2Oef+pLfNYu2ZD6WiBAHo6qj5Vy93PPA7YIHkn0ymom/Wtmj/UstMpnRIMhXdq1wQt8HzgXNHd622ZyfO84mh4gSB7Mcca+Q+ZHA7gOCyRORfCVPRXTNT/SfRqrHbvos0I2zKLAlTfq3wv8kF1u0w46+65Y7tXG0VuWp3ZTTqI7C5w7qBZTMbdZsL1Ir0KeBCh7sw3OzTavJPmulFg9clpXGYYUnvOcjMFoE/Fqw2N6i4HeNuF7nrK/1N4IoVZIBcNONZs5r1voz8BaBPg3041984VQC5iHvlNnMi7ED6qWEPeNz3etottkmnYqh4QQbY0mavAzcAN8y5XPV9AUdAtABsHxyzyL4X0Gmm9RC83O15ng4r6T2/OJkyggwmF9X+H7nfHkVFNurvZXYKMhBqIzEtPnfeY1j2WmfcrjCnnYJ4gtcBzOkIWlQxkSB7KvVNmoM4FPCB7YrA3ClITzsvYryAmBtGurv+svF/a6nKyOy1XAca0X3ANMwe6V5lO6Ncdv/kUbOOlvxjwMCbRLGEU+7hGOyMjNzo5I7r6rBXBh/cjfoWLTKvm5BOAeL54PyezzaDB1zkvjJ0ynj0r8ovVU1DQOzv3O2JdG2ie8qv9F2lSiz8PwbRfT5+66GNAAAAAElFTkSuQmCC"
+              />
+              <div class="card-body">
+                <h5 class="card-title">On-Site Programs</h5>
+                <p class="card-text">
+                  On-Site Managed Programs offer comprehensive solutions for
+                  managing and maintaining medical equipment in a healthcare
+                  facility
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-4 border border-0 shadow-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                <path
+                  d="M168 32c0-17.7 14.3-32 32-32h16c17.7 0 32 14.3 32 32h8c17.7 0 32 14.3 32 32V288c0 17.7-14.3 32-32 32h-8c0 17.7-14.3 32-32 32H200c-17.7 0-32-14.3-32-32h-8c-17.7 0-32-14.3-32-32V64c0-17.7 14.3-32 32-32l8 0zM32 448H320c70.7 0 128-57.3 128-128s-57.3-128-128-128V128c106 0 192 86 192 192c0 49.2-18.5 94-48.9 128H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H320 32c-17.7 0-32-14.3-32-32s14.3-32 32-32zm80-64H304c8.8 0 16 7.2 16 16s-7.2 16-16 16H112c-8.8 0-16-7.2-16-16s7.2-16 16-16z"
+                />
+              </svg>
+              <div class="card-body">
+                <h5 class="card-title">Equipment Services</h5>
+                <p class="card-text">
+                  M-One Medical Equipment provides rental, sales and technical
+                  services for nearly all types of medical equipment
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-4 border border-0 shadow-sm">
+              <img src="..." class="pb-4" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Better Equipped</h5>
+                <p class="card-text">
+                  No other company partners with healthcare professionals the
+                  way M One Medical Equipment does
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="p-4 border border-0 shadow-sm">
+              <img
+                class="pb-4"
+                width="100px"
+                src="data:image/png;base64,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"
+              />
+              <div class="card-body">
+                <h5 class="card-title">How We Serve Clients</h5>
+                <p class="card-text">
+                  Supply chain management, pharmacy and biomed rely on M-One
+                  Medical Equipment to meet the demand
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="py-5">
+      <div class="container text-center">
+        <h3>Our Products</h3>
+        <div class="row row-cols-1 row-cols-md-3 g-4 p-4">
+          <div class="col">
+            <div class="card border border-0 shadow-sm">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="fw-bold text-primary card-title">
+                  Beyond Medi Low Temperature Plasma Sterilizer
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border border-0 shadow-sm">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="fw-bold text-primary card-title">
+                  Nuova BN Autoclave Steam Sterilizeer
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card border border-0 shadow-sm">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="fw-bold text-primary card-title">
+                  TSM Durable Anti Bacterial Blanket
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <section class="py-5">
+      <div class="row text-center text-white mx-1">
+        <div class="col p-4" style="background-color: #0044aa">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            fill="currentColor"
+            class="bi bi-cpu pb-3 pt-3"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0zm-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3h-7zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"
+            />
+          </svg>
+          <div class="card-body">
+            <h5 class="card-title pb-3">Technology</h5>
+            <p class="card-text">
+              Healthcare technology are constantly in development to help poeple
+              stay healthy, better diagnose disease, treat illness, and provide
+              a better quality of life.
+            </p>
+          </div>
+        </div>
+        <div class="col p-4" style="background-color: #0d6efd">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            fill="currentColor"
+            class="bi bi-heart-pulse pb-3 pt-3"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053.918 3.995.78 5.323 1.508 7H.43c-2.128-5.697 4.165-8.83 7.394-5.857.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17c3.23-2.974 9.522.159 7.394 5.856h-1.078c.728-1.677.59-3.005.108-3.947C13.486.878 10.4.28 8.717 2.01L8 2.748ZM2.212 10h1.315C4.593 11.183 6.05 12.458 8 13.795c1.949-1.337 3.407-2.612 4.473-3.795h1.315c-1.265 1.566-3.14 3.25-5.788 5-2.648-1.75-4.523-3.434-5.788-5Zm8.252-6.686a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.5a.5.5 0 0 0 0 1H4a.5.5 0 0 0 .416-.223l1.473-2.209 1.647 4.118a.5.5 0 0 0 .945-.049l1.598-5.593 1.457 3.642A.5.5 0 0 0 12 9h3.5a.5.5 0 0 0 0-1h-3.162l-1.874-4.686Z"
+            />
+          </svg>
+          <div class="card-body">
+            <h5 class="card-title pb-3">Healthcare Solutions</h5>
+            <p class="card-text">
+              M-One Medical Equipment provides Indonesia with a wide range of
+              Medical Mobility, Incontinence Supplies, Medical Equipment,
+              Sleeping Aides & more.
+            </p>
+          </div>
+        </div>
+        <div class="col p-4" style="background-color: #3b89ff">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="35"
+            fill="currentColor"
+            class="bi bi-gem pb-3 pt-3"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"
+            />
+          </svg>
+          <div class="card-body">
+            <h5 class="card-title pb-3">Quality</h5>
+            <p class="card-text">
+              Quality health care services is important for the achievement of
+              health equity and for increasing the quality of a healthy life for
+              everyone.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Contact Us</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  aria-describedby="name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="email"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Message</label>
+                <textarea class="form-control" id="pesan" rows="3"></textarea>
+              </div>
+              <button
+                id="submit"
+                type="submit"
+                class="btn btn-primary rounded-pill"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-primary center d-flex justify-content-center">
+      <div class="lead text-center text-white align-self-center">
+        Copyright 2022 &copy; <b>M-One Medical Equipment Nusantara</b>
+      </div>
+    </footer>
+  </body>
+</html>
